@@ -5,3 +5,8 @@
 api.http.host: 0.0.0.0
 
 node.name: logstash
+
+xpack.monitoring.elasticsearch.ssl:
+  certificate_authority: certs/ca.crt
+  verification_mode: full
+
