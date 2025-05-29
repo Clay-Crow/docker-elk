@@ -12,4 +12,5 @@ xpack.monitoring.elasticsearch.ssl:
   certificate_authority: /usr/share/logstash/config/certs/ca.crt
   verification_mode: full
   
-
+xpack.monitoring.elasticsearch.username: "elastic"
+xpack.monitoring.elasticsearch.password: "${LOGSTASH_INTERNAL_PASSWORD}"
