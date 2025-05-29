@@ -4,7 +4,11 @@
 #
 server.name: kibana
 server.host: 0.0.0.0
-elasticsearch.hosts: [ http://elasticsearch:9200 ]
+elasticsearch.hosts: [ https://elasticsearch:9200 ]
+server.ssl:
+  enabled: true
+  certificate: /usr/share/kibana/config/certs/elk.crt
+  key: /usr/share/kibana/config/certs/elk.key
 
 monitoring.ui.container.elasticsearch.enabled: true
 monitoring.ui.container.logstash.enabled: true
