@@ -6,7 +6,10 @@ api.http.host: 0.0.0.0
 
 node.name: logstash
 
+xpack.monitoring.enabled: true
+xpack.monitoring.elasticsearch.hosts: ["https://elasticsearch:9200"]
 xpack.monitoring.elasticsearch.ssl:
-  certificate_authority: certs/ca.crt
+  certificate_authority: /usr/share/logstash/config/certs/ca.crt
   verification_mode: full
+  
 
